@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #79c7c5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#quote-anime {
+  font-size: 1.4em;
+  padding-bottom: 1em;
+}
+
+#quote-text {
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 0 20px;
+  margin: 8px 0;
+}
+
+#quote-character {
+  font-size: 1em;
+}
+
+.quote-box {
+  background-color: #ffffff;
+  width: 60vw;
+  margin: 10vh auto 0;
+  border-radius: 4px;
+  padding: 4rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+button {
+  margin: 10px;
+  padding: 0.8rem 1.3rem;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  outline: none;
+  background-color: #f45b69;
+}
+
+button p {
+  font-size: 1.5em;
+  color: #ffffff;
+}
+
+button:hover {
+  background-color: #e95460;
+}
+
+/*** Media Queries ***/
+
+@media screen and (max-width: 1025px) {
+  .quote-box {
+    width: 80vh;
+  }
+}
+
+@media (max-width: 620px) {
+  .quote-box {
+    width: 60vh;
+  }
+}
+
+@media (max-width: 480px) {
+  #quote-text {
+    font-size: 1.1em;
+  }
+
+  #quote-character {
+    font-size: 0.8em;
+  }
+
+  .quote-box {
+    width: 50vh;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+  }
+}
