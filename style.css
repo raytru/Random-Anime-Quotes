@@ -14,6 +14,18 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.quote-box {
+  background-color: #ffffff;
+  max-width: 80vh;
+  width: calc(100% - 1.5rem);
+  margin: 10vh auto 0;
+  border-radius: 4px;
+  padding: 4rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
 #quote-anime {
   font-size: 1.4em;
   padding-bottom: 1em;
@@ -30,15 +42,8 @@ body {
   font-size: 1em;
 }
 
-.quote-box {
-  background-color: #ffffff;
-  width: 60vw;
-  margin: 10vh auto 0;
-  border-radius: 4px;
-  padding: 4rem 1.5rem;
-  position: relative;
-  overflow: hidden;
-  text-align: center;
+a {
+  text-decoration: none;
 }
 
 button {
@@ -63,32 +68,41 @@ button:hover {
 
 /*** Media Queries ***/
 
-@media screen and (max-width: 1025px) {
-  .quote-box {
-    width: 80vh;
-  }
-}
-
 @media (max-width: 620px) {
-  .quote-box {
-    width: 60vh;
+  #quote-anime {
+    font-size: 1.2em;
+    padding-bottom: 0.8em;
   }
-}
 
-@media (max-width: 480px) {
   #quote-text {
     font-size: 1.1em;
+    padding: 0 10px;
   }
 
   #quote-character {
     font-size: 0.8em;
   }
+}
 
-  .quote-box {
-    width: 50vh;
+@media (max-width: 480px) {
+  #quote-anime {
+    font-size: 1em;
+  }
+
+  #quote-text {
+    font-size: 0.9em;
+    padding: 0 8px;
+  }
+
+  #quote-character {
+    font-size: 0.7em;
   }
 
   button {
     padding: 0.5rem 1rem;
+  }
+
+  button p {
+    font-size: 1.2em;
   }
 }

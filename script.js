@@ -13,6 +13,7 @@ function randomQuote() {
     });
 }
 
+// Button delay to avoid spam
 function delayClick(obj) {
   obj.disabled = true;
   setTimeout(function () {
