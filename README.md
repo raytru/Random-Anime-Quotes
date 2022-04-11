@@ -1,4 +1,4 @@
-# anime-quote-website
+# Anime Quote Website 
 
 This repo makes use of [Animechan api](https://github.com/RocktimSaikia/anime-chan) to fetch random anime quotes everytime you press the button. This app was built using HTML, CSS and JavaScript.
 
